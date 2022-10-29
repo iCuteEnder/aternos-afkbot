@@ -30,8 +30,6 @@ function getRandomArbitrary(min, max) {
 bot.on('login',function(){
     var cmd = '/login d3lt4bot'
     bot.chat(cmd)
-    wait(50);
-    bot.chat('Connected to Δ3LT4-proxy!');
 });
 
 bot.on('time', function() {
