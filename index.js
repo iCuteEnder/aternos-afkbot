@@ -55,5 +55,7 @@ bot.on('time', function() {
 
 bot.on('spawn',function() {
     connected=1;
+    bot.chat('/login d3ltabot');
+    bot.chat('Connected to Δ3LT4-proxy!');
 });
 
