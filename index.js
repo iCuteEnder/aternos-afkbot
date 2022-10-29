@@ -18,6 +18,10 @@ var host = data["ip"];
 var port = data["port"];
 var username = data["name"]
 
+config = {
+  password: 'd3lt4bot'
+};
+
 var bot = mineflayer.createBot({
   plugins: [autoauth],
   autoauth: {
