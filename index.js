@@ -24,7 +24,7 @@ var bot = mineflayer.createBot({
     logging: true,
     password: 'd3lt4bot',
     ignoreRepeat: true
-  }
+  },
   host: host,
   port: port,
   username: username
