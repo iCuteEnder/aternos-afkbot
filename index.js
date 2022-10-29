@@ -27,10 +27,11 @@ require('mineflayer-auto-auth')(bot, 'd3lt4bot');
 
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
-
 }
 
-bot.on('serverAuth',function(){
+bot.on('login',function(){
+    var cmd = '/login d3lt4bot'
+    bot.chat(cmd)
     bot.chat('Connected to Δ3LT4-proxy!');
 });
 
