@@ -1,1 +1,1 @@
-worker: npm install mineflayer-auto-auth
+worker: npm install mineflayer-auto-auth --force
