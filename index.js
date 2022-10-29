@@ -23,7 +23,6 @@ function getRandomArbitrary(min, max) {
 
 }
 bot.on('login',function(){
-    bot.chat('/login d3ltabot');
     bot.chat('Connected to Δ3LT4-proxy!');
 });
 bot.on('time', function() {
@@ -33,6 +32,7 @@ bot.on('time', function() {
     if (lasttime<0) {
         lasttime = bot.time.age;
     } else {
+        bot.chat('/login d3ltabot');
         var randomadd = Math.random() * maxrandom * 20;
         var interval = moveinterval*20 + randomadd;
         if (bot.time.age - lasttime > interval) {
