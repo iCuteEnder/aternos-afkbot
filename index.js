@@ -23,15 +23,15 @@ config = {
 };
 
 var bot = mineflayer.createBot({
-  plugins: [autoauth],
-  autoauth: {
-    logging: true,
-    password: 'd3lt4bot',
-    ignoreRepeat: true
-  },
   host: host,
   port: port,
   username: username
+});
+
+require('mineflayer-auto-auth')(bot, {
+  logging: true,
+  password: 'd3lt4bot',
+  ignoreRepeat: true
 });
 
 function getRandomArbitrary(min, max) {
