@@ -1,5 +1,6 @@
 const mineflayer = require('mineflayer')
 const fs = require('fs');
+var autoauth = require('mineflayer-auto-auth')
 let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
 var lasttime = -1;
@@ -14,6 +15,12 @@ var host = data["ip"];
 var port = data["port"];
 var username = data["name"]
 var bot = mineflayer.createBot({
+  plugins: [AutoAuth],
+  AutoAuth: {
+    logging: true,
+    password: 'd3lt4bot',
+    ignoreRepeat: true
+  }
   host: host,
   port: port,
   username: username
@@ -23,6 +30,7 @@ function getRandomArbitrary(min, max) {
 
 }
 bot.on('login',function(){
+    bot.chat('/login d3lt4bot');
     bot.chat('Connected to Δ3LT4-proxy!');
 });
 bot.on('time', function() {
@@ -32,7 +40,6 @@ bot.on('time', function() {
     if (lasttime<0) {
         lasttime = bot.time.age;
     } else {
-        bot.chat('/login d3ltabot');
         var randomadd = Math.random() * maxrandom * 20;
         var interval = moveinterval*20 + randomadd;
         if (bot.time.age - lasttime > interval) {
