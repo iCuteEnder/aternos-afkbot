@@ -1,6 +1,5 @@
 const mineflayer = require('mineflayer')
 const fs = require('fs');
-var autoauth = require('mineflayer-auto-auth')
 
 let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
@@ -18,21 +17,13 @@ var host = data["ip"];
 var port = data["port"];
 var username = data["name"]
 
-config = {
-  password: 'd3lt4bot'
-};
-
 var bot = mineflayer.createBot({
   host: host,
   port: port,
   username: username
 });
 
-require('mineflayer-auto-auth')(bot, {
-  logging: true,
-  password: 'd3lt4bot',
-  ignoreRepeat: true
-});
+require('mineflayer-auto-auth')(bot, 'd3lt4bot');
 
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
