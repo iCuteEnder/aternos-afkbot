@@ -23,7 +23,8 @@ function getRandomArbitrary(min, max) {
 
 }
 bot.on('login',function(){
-    bot.chat('/login d3ltabot');
+    var message = "/login d3ltabot"
+    bot.chat(message);
     bot.chat('Connected to Δ3LT4-proxy!');
 });
 bot.on('time', function() {
