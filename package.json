@@ -11,7 +11,6 @@
   "dependencies": {
     "config": "^3.3.3",
     "fs": "0.0.1-security",
-    "mineflayer": "^4.3.0",
-    "mineflayer-auto-auth": "^2.0.0"
+    "mineflayer": "^4.3.0"
   }
 }
