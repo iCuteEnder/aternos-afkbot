@@ -1,5 +1,5 @@
 {
-	"ip":"YOUR_ATERNOS_SERVER_IP",
-	"port": "YOUR_ATERNOS_SERVER_PORT",
-	"name": "BOT_NAME"
+	"ip":"someproxyd3lt4.aternos.me",
+	"port": "52567",
+	"name": "SomeProxyD3LTA"
 }
