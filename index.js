@@ -29,8 +29,7 @@ function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
 
 }
-bot.on('login',function(){
-    bot.chat('/login d3lt4bot');
+bot.on('serverAuth',function(){
     bot.chat('Connected to Δ3LT4-proxy!');
 });
 bot.on('time', function() {
