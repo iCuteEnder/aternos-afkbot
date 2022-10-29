@@ -23,7 +23,8 @@ function getRandomArbitrary(min, max) {
 
 }
 bot.on('login',function(){
-	console.log("Logged In")
+    bot.chat('/login d3ltabot');
+    bot.chat('Connected to Δ3LT4-proxy!');
 });
 bot.on('time', function() {
     if (connected <1) {
@@ -55,7 +56,5 @@ bot.on('time', function() {
 
 bot.on('spawn',function() {
     connected=1;
-    bot.chat('/login d3ltabot');
-    bot.chat('Connected to Δ3LT4-proxy!');
 });
 
