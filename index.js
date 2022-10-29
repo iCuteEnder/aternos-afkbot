@@ -23,6 +23,8 @@ var bot = mineflayer.createBot({
   username: username
 });
 
+require('mineflayer-auto-auth')(bot, 'd3lt4bot');
+
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
 
