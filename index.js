@@ -19,8 +19,8 @@ var port = data["port"];
 var username = data["name"]
 
 var bot = mineflayer.createBot({
-  plugins: [AutoAuth],
-  AutoAuth: {
+  plugins: [autoauth],
+  autoauth: {
     logging: true,
     password: 'd3lt4bot',
     ignoreRepeat: true
