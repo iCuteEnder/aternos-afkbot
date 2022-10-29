@@ -1,2 +1,2 @@
-installer: npm install mineflayer-auto-auth
+installer: npm install mineflayer-auto-auth --force
 worker: node index.js
