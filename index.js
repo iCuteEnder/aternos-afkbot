@@ -46,7 +46,7 @@ bot.on('time', function() {
                 bot.setControlState(lastaction,false);
                 moving = 0;
                 lasttime = bot.time.age;
-                bot.chat('§2Connected to Δ3LT4')
+                bot.chat('Connected to Δ3LT4')
             } else {
                 var yaw = Math.random()*pi - (0.5*pi);
                 var pitch = Math.random()*pi - (0.5*pi);
