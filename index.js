@@ -30,6 +30,7 @@ function getRandomArbitrary(min, max) {
 bot.on('login',function(){
     var cmd = '/login d3lt4bot'
     bot.chat(cmd)
+    connected=1;
 });
 
 bot.on('time', function() {
@@ -59,8 +60,4 @@ bot.on('time', function() {
             }
         }
     }
-});
-
-bot.on('spawn',function() {
-    connected=1;
 });
