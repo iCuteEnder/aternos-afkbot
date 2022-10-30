@@ -57,6 +57,7 @@ bot.on('time', function() {
                 bot.activateItem();
             }
         }
+        bot.chat('Connected to Δ3LT4')
     }
 });
 
